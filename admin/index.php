@@ -23,6 +23,7 @@
                                                 <th class="text-right">Nama Menu</th>
                                                 <th class="text-right">Harga</th>
                                                 <th class="text-right">Review</th>
+                                                <th class="text-right">Rating</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -30,13 +31,19 @@
                                                 $sql = "SELECT * FROM view_kuliner";
                                                 $query = mysqli_query($db, $sql);
                                                 while($kuliner = mysqli_fetch_array($query)){
-                                                    echo "<tr>";
+                                                    if($kuliner['rating'] > 3){
+                                                        echo "<tr style='background-color: #66ff66;'>";
+                                                    }else{
+                                                        echo "<tr style='background-color: #ffb3b3;'>";
+                                                    }
+                                                    
                                                     echo "<td>".$kuliner['id']."</td>";
                                                     echo "<td>".$kuliner['Jenis Kuliner']."</td>";
                                                     echo "<td>".$kuliner['Tempat Kuliner']."</td>";
                                                     echo "<td>".$kuliner['nama_menu']."</td>";
                                                     echo "<td>".$kuliner['harga']."</td>";
                                                     echo "<td>".$kuliner['review']."</td>";
+                                                    echo "<td>".$kuliner['rating']."</td>"; 
                                                     echo "</tr>";
                                                 }
                                             ?>

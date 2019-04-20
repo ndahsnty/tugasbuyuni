@@ -9,7 +9,9 @@
         $harga_kuliner = $_POST['harga_kuliner'];
         $nama_kuliner = $_POST['nama_kuliner'];
         $review = $_POST['review'];
-        $sql = "INSERT INTO menu_kuliner (id_jk, id_tk, nama_menu, harga, review) VALUES ('".$jk."', '".$tk."', '".$nama_kuliner."', '".$harga_kuliner."', '".$review."')";
+        $rating = $_POST['star'];
+        // echo "alert('".$rating."');";
+        $sql = "INSERT INTO menu_kuliner (id_jk, id_tk, nama_menu, harga, review, rating) VALUES ('".$jk."', '".$tk."', '".$nama_kuliner."', '".$harga_kuliner."', '".$review."','".$rating."')";
         $query = mysqli_query($db, $sql);
         if( $query ) {
             header('Location: ../index.php?status=sukses');

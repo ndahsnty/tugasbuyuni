@@ -84,7 +84,11 @@
             <li><a href="#mu-gallery">GALERI</a></li>
             <li><a href="#mu-about-us">TENTANG KAMI</a></li>
             <li><a href="#mu-contact">KONTAK</a></li> 
+<<<<<<< HEAD
             <li><a href="login.html">LOGIN</a></li> 
+=======
+            <li><a href="login.php">LOGIN</a></li> 
+>>>>>>> 8f70e35fd15abe45ee546e7db741ce71c06e1f29
           </ul>                            
         </div><!--/.nav-collapse -->       
       </div>          

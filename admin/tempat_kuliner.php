@@ -19,6 +19,7 @@
                                                 <th>No</th>
                                                 <th>Nama</th>
                                                 <th>Alamat</th>
+                                                <th>Rating</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -26,10 +27,15 @@
                                                 $sql = "SELECT * FROM tempat_kuliner";
                                                 $query = mysqli_query($db, $sql);
                                                 while($kuliner = mysqli_fetch_array($query)){
-                                                    echo "<tr>";
+                                                    if($kuliner['rating'] == 5){
+                                                        echo "<tr style='background-color: #66ff66;'>";
+                                                    }else{
+                                                        echo "<tr style='background-color: #ffb3b3;'>";
+                                                    }
                                                     echo "<td>".$kuliner['id']."</td>";
                                                     echo "<td>".$kuliner['nama']."</td>";
                                                     echo "<td>".$kuliner['alamat']."</td>";
+                                                    echo "<td>".$kuliner['rating']."</td>";
                                                     echo "</tr>";
                                                 }
                                             ?>
