@@ -45,15 +45,25 @@
     <![endif]-->
 
   </head>
-  <body>
+  <style>
+  #img{
+    z-index: 999;
+    margin-left: 1400px;
+    top:500px;
 
+    position: fixed;
+    
+  }
+  </style>
+  <body>
+  <img src="assets/img/hehe.png" alt="" id="img">
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>
     </a>
   <!-- END SCROLL TOP BUTTON -->
-
-  <!-- Start header section -->
+  
+  <!-- Start header setion -->
   <header id="mu-header">  
     <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
       <div class="container">
@@ -84,18 +94,14 @@
             <li><a href="#mu-gallery">GALERI</a></li>
             <li><a href="#mu-about-us">TENTANG KAMI</a></li>
             <li><a href="#mu-contact">KONTAK</a></li> 
-<<<<<<< HEAD
-            <li><a href="login.html">LOGIN</a></li> 
-=======
             <li><a href="login.php">LOGIN</a></li> 
->>>>>>> 8f70e35fd15abe45ee546e7db741ce71c06e1f29
           </ul>                            
         </div><!--/.nav-collapse -->       
       </div>          
     </nav> 
   </header>
   <!-- End header section -->
- 
+  
 
   <!-- Start slider  -->
   <section id="mu-slider">
@@ -736,6 +742,7 @@
             <a href="http:://www.facebook.com/indahnordianasanty"><span class="fa fa-facebook"></span></a>
           </div>
           <div class="mu-footer-copyright">
+            
             <p>&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
           </div>         
         </div>
